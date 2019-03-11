@@ -1,0 +1,53 @@
+/* components/mask/mask.wxss */
+.mask {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:#000;
+  opacity:0.5;
+  z-index:99;
+  animation: mask .5s;
+}
+@keyframes mask {
+  0%{
+    opacity: 0
+  }
+  100%{
+    opacity: .5
+  }
+}
+
+/* 自定义Modal弹窗 */
+.modal 
+{
+  width:550rpx;
+  background:#FFFFFF;
+  z-index:99;
+  position: fixed;
+  top:400rpx;
+  left:85rpx;
+  text-align:center;
+  border-radius:10rpx;
+  font-size: 27rpx;
+  padding:20rpx;
+  animation: modal .5s;
+}
+.modal > view 
+{
+  padding:20rpx 0;
+}
+
+.contact
+{
+  margin-top:20rpx;
+}
+.contact > view
+{
+  color:#ECCCAA;
+  border:none;
+  display:inline-block;
+  width:49%;
+  font-size:30rpx;
+}

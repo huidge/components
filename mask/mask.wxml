@@ -1,0 +1,9 @@
+<!--弹出遮罩层-->
+<view class='mask' wx-if='{{isShow}}' bindtap='toggle'></view>
+<view class='modal' wx-if='{{isShow}}'>
+  <view style='font-size:35rpx;font-weight:bolder;'>玩法</view>
+  <text style='padding:20rpx;'>活动规则</text>
+  <view class='contact'>
+    <view bindtap='hide'>关闭</view>
+  </view>
+</view>
